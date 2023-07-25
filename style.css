@@ -1,0 +1,42 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr 1fr ;
+  grid-template-areas:  "hd hd"
+                        "sidebar main"
+                        "ft ft";
+  grid-gap: 5px;
+}
+header {
+  grid-area: hd;
+  background: blue;
+}
+main {
+  grid-area: main;
+  //background: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // grid-template-areas: "oben"
+  grid-template-rows: 1fr 2fr auto;
+ 
+  grid-gap: 5px;
+}
+card {
+  //grid-area: unten;
+  background: white;
+}
+footer {
+  grid-area: ft;
+  background: yellow;
+}
+aside {
+  grid-area: sidebar;
+  background: grey;
+}
+ul {
+  display: flex;
+}
+main > h1 {
+  //grid-area: oben;
+  background: grey;
+}
